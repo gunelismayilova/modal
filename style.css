@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal-section {
+    min-height: 100vh;
+    background-image: url(/images/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-section .banner {
+    background-color: #fff;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.modal-section .banner h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+
+.modal-section .banner button {
+    background: rgb(79, 79, 237);
+    padding: 10px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 10px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.modal-section .banner button:hover {
+    opacity: 0.8;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(70, 132, 255, .5 );
+    transition: all 0.5s;
+    visibility: hidden;
+    z-index: -10;
+
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.modal-container h2 {
+    margin-top: 80px;
+    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    
+}
+
+.modal-container .close-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: rgb(188, 33, 33);
+    font-weight: bolder;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.modal-container .close-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.5);
+}
